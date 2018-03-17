@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using Microsoft.AspNetCore.Mvc;
 using OwlRd.API.Controllers.Common;
@@ -14,8 +13,8 @@ namespace OwlRd.API.Controllers
 		{
 			return new List<CharacterViewModel>
 			{
-				new CharacterViewModel(Guid.NewGuid(), "Alice Owl", new Point(10, 5)),
-				new CharacterViewModel(Guid.NewGuid(),
+				new CharacterViewModel(1, "Alice Owl", new Point(10, 5)),
+				new CharacterViewModel(2,
 					"MobyDick Owl",
 					new Point(15, 10))
 			};

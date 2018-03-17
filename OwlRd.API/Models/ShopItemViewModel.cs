@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace OwlRd.API.Models
+﻿namespace OwlRd.API.Models
 {
 	public class ShopItemViewModel
 	{
-		public ShopItemViewModel(Guid id, string name, string image, ShopItemType type)
+		public ShopItemViewModel(int id, string name, string image, ShopItemType type)
 		{
 			Id = id;
 			Name = name;
@@ -12,7 +10,7 @@ namespace OwlRd.API.Models
 			Type = type;
 		}
 
-		public Guid Id { get; set; }
+		public int Id { get; set; }
 		public string Name { get; set; }
 		public string Image { get; set; }
 		public ShopItemType Type { get; set; }

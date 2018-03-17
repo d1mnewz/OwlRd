@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using OwlRd.API.Controllers.Common;
+using OwlRd.API.Models;
 
 namespace OwlRd.API.Controllers
 {
@@ -12,7 +12,7 @@ namespace OwlRd.API.Controllers
 		{
 			return new List<BookThumbnailViewModel>
 			{
-				new BookThumbnailViewModel(Guid.NewGuid(), "https://images-na.ssl-images-amazon.com/images/I/91NJTuwDDhL._SL1500_.jpg",
+				new BookThumbnailViewModel(1, "https://images-na.ssl-images-amazon.com/images/I/91NJTuwDDhL._SL1500_.jpg",
 					"Alice in Wonderland")
 			};
 		}
