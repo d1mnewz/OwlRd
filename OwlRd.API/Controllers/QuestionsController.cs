@@ -11,7 +11,6 @@ namespace OwlRd.API.Controllers
 		[HttpGet, Route("")]
 		public QuestionViewModel GetQuestions()
 		{
-			Console.WriteLine("Request started");
 			return new QuestionViewModel("What Alice have done at that moment?",
 				new List<QuestionAnswer>
 				{
