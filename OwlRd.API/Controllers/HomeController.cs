@@ -5,6 +5,7 @@ namespace OwlRd.API.Controllers
 {
 	public class HomeController : Controller
 	{
+		[HttpGet, Route("")]
 		public ApplicationSettings Get()
 		{
 			return new ApplicationSettings(DateTime.UtcNow);
